@@ -2,7 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const logger = require('./utils/logger');
+const passport = require('passport');
 const connect = require('./utils/databseConnection');
+const googleAuth = require('./configs/googleAuth');
 
 const app = express();
 const PORT = process.env.PORT || "8090";
